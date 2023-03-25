@@ -1,6 +1,7 @@
 const controles = document.querySelector('.controles');
 const btn = document.querySelector('.btn-resultado');
 const cssTexto = document.querySelector('.css');
+const eventos = ['input', 'change'];
 const handleStyle = {
     element: btn,
     texto(valor) {
@@ -32,8 +33,9 @@ const handleStyle = {
     },
 };
 
-controles.addEventListener('change', handleChange);
-controles.addEventListener('input', handleChange);
+eventos.forEach(evento => {
+    controles.addEventListener(evento, handleChange);
+});
 
 function handleChange(event) {
     const nome = event.target.name;
