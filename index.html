@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript | Button Creator</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Button Creator</h1>
+    <div class="controles">
+      <form action="#" class="form-controles">
+        <label for="texto">button texto</label>
+        <input type="text" name="texto" id="texto">
+        <label for="color">color</label>
+        <input type="color" name="color" id="color">
+        <label for="backgroundColor">background-color</label>
+        <input type="color" name="backgroundColor" id="backgroundColor">
+        <label for="height">height</label>
+        <input type="range" name="height" id="height" min="0" max="200">
+        <label for="width">width</label>
+        <input type="range" name="width" id="width" min="0" max="600">
+        <label for="borderRadius">border-radius</label>
+        <input type="range" name="borderRadius" id="borderRadius" min="0" max="50">
+        <label for="border">border</label>
+        <input type="text" name="border" id="border">
+        <select name="fontFamily" id="fontFamily" title="font-family">
+          <option value="Arial">Arial</option>
+          <option value="Georgia">Georgia</option>
+          <option value="monospace">Monospace</option>
+        </select>
+        <label for="fontSize">font-size</label>
+        <input type="number" name="fontSize" id="fontSize">
+      </form>
+    </div>
+    <section class="resultado">
+      <div class="resultado-btn">
+        <button class="btn-resultado">Seu Botão 👌</button>
+      </div>
+      <div class="resultado-codigo">
+        <pre><code class="css"></code></pre>
+      </div>
+    </section>
+  </div>
+
+  <script src="./js/script.js"></script>
+  
+</body>
+</html>
